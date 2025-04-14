@@ -1,0 +1,351 @@
+{
+  "frames": {
+    "BoosterBg.png": {
+      "frame": {
+        "x": 8,
+        "y": 8,
+        "w": 179,
+        "h": 1021
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 179,
+        "h": 1021
+      },
+      "sourceSize": {
+        "w": 179,
+        "h": 1021
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BoosterBacklight.png": {
+      "frame": {
+        "x": 8,
+        "y": 1045,
+        "w": 374,
+        "h": 385
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 374,
+        "h": 385
+      },
+      "sourceSize": {
+        "w": 374,
+        "h": 385
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BoosterBombe.png": {
+      "frame": {
+        "x": 8,
+        "y": 1446,
+        "w": 294,
+        "h": 330
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 294,
+        "h": 330
+      },
+      "sourceSize": {
+        "w": 294,
+        "h": 330
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Button.png": {
+      "frame": {
+        "x": 8,
+        "y": 1792,
+        "w": 572,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 572,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 572,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Lock.png": {
+      "frame": {
+        "x": 8,
+        "y": 1965,
+        "w": 58,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 58,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 58,
+        "h": 75
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BoosterBlueBottle.png": {
+      "frame": {
+        "x": 318,
+        "y": 1446,
+        "w": 293,
+        "h": 303
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 24,
+        "w": 293,
+        "h": 303
+      },
+      "sourceSize": {
+        "w": 294,
+        "h": 330
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RefreshButton.png": {
+      "frame": {
+        "x": 596,
+        "y": 1765,
+        "w": 157,
+        "h": 157
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 157,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 157,
+        "h": 157
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BoosterGreenBottle.png": {
+      "frame": {
+        "x": 203,
+        "y": 8,
+        "w": 293,
+        "h": 303
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 24,
+        "w": 293,
+        "h": 303
+      },
+      "sourceSize": {
+        "w": 294,
+        "h": 330
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BoosterRedBottle.png": {
+      "frame": {
+        "x": 203,
+        "y": 327,
+        "w": 293,
+        "h": 303
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 21,
+        "w": 293,
+        "h": 303
+      },
+      "sourceSize": {
+        "w": 294,
+        "h": 330
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BoosterShield.png": {
+      "frame": {
+        "x": 203,
+        "y": 646,
+        "w": 293,
+        "h": 303
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 24,
+        "w": 293,
+        "h": 303
+      },
+      "sourceSize": {
+        "w": 294,
+        "h": 330
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BoosterWatch.png": {
+      "frame": {
+        "x": 398,
+        "y": 965,
+        "w": 292,
+        "h": 303
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 24,
+        "w": 292,
+        "h": 303
+      },
+      "sourceSize": {
+        "w": 294,
+        "h": 330
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BoosterEmptyBg.png": {
+      "frame": {
+        "x": 398,
+        "y": 1284,
+        "w": 147,
+        "h": 143
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 147,
+        "h": 143
+      },
+      "sourceSize": {
+        "w": 147,
+        "h": 143
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Triangle.png": {
+      "frame": {
+        "x": 561,
+        "y": 1284,
+        "w": 61,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 61,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 61,
+        "h": 122
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Checkmark.png": {
+      "frame": {
+        "x": 627,
+        "y": 1422,
+        "w": 118,
+        "h": 118
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 118,
+        "h": 118
+      },
+      "sourceSize": {
+        "w": 118,
+        "h": 118
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "texture.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2048,
+      "h": 2048
+    },
+    "scale": 1
+  }
+}
