@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Boosters:
   - {fileID: 0}
-  - {fileID: 140711569, guid: f621b3f63f3b3564e8eee4a596d28eee, type: 3}
-  - {fileID: 2131058636, guid: f621b3f63f3b3564e8eee4a596d28eee, type: 3}
-  - {fileID: -815329805, guid: f621b3f63f3b3564e8eee4a596d28eee, type: 3}
-  - {fileID: 1670975994, guid: f621b3f63f3b3564e8eee4a596d28eee, type: 3}
-  - {fileID: 706932345, guid: f621b3f63f3b3564e8eee4a596d28eee, type: 3}
-  - {fileID: -777500490, guid: f621b3f63f3b3564e8eee4a596d28eee, type: 3}
+  - {fileID: -1977868019, guid: d9c52dbc0a6ba14418fa744f3adb3c59, type: 3}
+  - {fileID: -565930567, guid: d9c52dbc0a6ba14418fa744f3adb3c59, type: 3}
+  - {fileID: 926343544, guid: d9c52dbc0a6ba14418fa744f3adb3c59, type: 3}
+  - {fileID: -1877208876, guid: d9c52dbc0a6ba14418fa744f3adb3c59, type: 3}
+  - {fileID: -1628831643, guid: d9c52dbc0a6ba14418fa744f3adb3c59, type: 3}
+  - {fileID: -720126055, guid: d9c52dbc0a6ba14418fa744f3adb3c59, type: 3}

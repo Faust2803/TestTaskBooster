@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f621b3f63f3b3564e8eee4a596d28eee
+guid: d9c52dbc0a6ba14418fa744f3adb3c59
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,89 +149,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BoosterBg
+      name: Button
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1019
-        width: 179
-        height: 1021
+        x: 4
+        y: 1887
+        width: 572
+        height: 157
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e10ca69b0f49a86429148bb749945b78
-      internalID: 1592129000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BoosterGreenBottle
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 1738
-        width: 293
-        height: 302
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e64dc9c49164c9f4ea984aacaf824d49
-      internalID: -815329805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BoosterRedBottle
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 1418
-        width: 293
-        height: 303
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cf8422e9b3f0b54da418ddec74f4000
-      internalID: 2131058636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BoosterShield
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 1099
-        width: 293
-        height: 302
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a477b70cef254024497a2e0d247bdcad
-      internalID: 1670975994
+      spriteID: 0edb0547f1ee22a4fb2ce13c2ac58a24
+      internalID: -610015874
       vertices: []
       indices: 
       edges: []
@@ -240,108 +174,86 @@ TextureImporter:
       name: BoosterBacklight
       rect:
         serializedVersion: 2
-        x: 12
-        y: 618
+        x: 584
+        y: 1661
         width: 374
         height: 385
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d0f746789d766c4a99a1d5913c3716f
-      internalID: -1235371807
+      spriteID: 5b1679dd8a249194b8f812df8157006a
+      internalID: -524084242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoosterWatch
+      name: BoosterGreenBottle
       rect:
         serializedVersion: 2
-        x: 398
-        y: 784
+        x: 967
+        y: 1718
         width: 292
-        height: 302
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2184e510d1952347a633ffe66283573
-      internalID: 706932345
+      spriteID: 66e65a96739169040b27344390fce854
+      internalID: 926343544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoosterEmptyBg
+      name: BoosterRedBottle
       rect:
         serializedVersion: 2
-        x: 398
-        y: 621
-        width: 147
-        height: 143
+        x: 1268
+        y: 1720
+        width: 293
+        height: 328
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa26523e3d3682b45954668b1897ed1b
-      internalID: 1939699977
+      spriteID: 93baf8afae54d73468e672228b56dbdf
+      internalID: -565930567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Triangle
+      name: BoosterShield
       rect:
         serializedVersion: 2
-        x: 561
-        y: 642
-        width: 61
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb7a355a2b14560498a5ef1d791fe1be
-      internalID: 1341887988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BoosterBombe
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 272
+        x: 1570
+        y: 1717
         width: 293
         height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7130b3dbd292d8e499e75767d56442c5
-      internalID: -777500490
+      spriteID: 70d25f522e027eb40b040bb858d77831
+      internalID: -1877208876
       vertices: []
       indices: 
       edges: []
@@ -350,64 +262,64 @@ TextureImporter:
       name: BoosterBlueBottle
       rect:
         serializedVersion: 2
-        x: 318
-        y: 299
+        x: 4
+        y: 1552
         width: 293
-        height: 302
+        height: 330
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed53cc5818aefad4da8fa719f2c2ba04
-      internalID: 140711569
+      spriteID: a7f8b20215bf05645a9f0c5d7b0cd4d2
+      internalID: -1977868019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Checkmark
+      name: BoosterBg
       rect:
         serializedVersion: 2
-        x: 627
-        y: 508
-        width: 118
-        height: 118
+        x: 306
+        y: 1812
+        width: 179
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 36, z: 0, w: 28}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f114347b11495bb44b1023c432176195
-      internalID: 1859511285
+      spriteID: d823e427fbce0bd45bdba02fb0cb2edf
+      internalID: 995584036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button
+      name: Triangle
       rect:
         serializedVersion: 2
-        x: 8
-        y: 99
-        width: 572
-        height: 157
+        x: 495
+        y: 1757
+        width: 61
+        height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8326d2986bd7ff948ab960d560b590ee
-      internalID: -2145160416
+      spriteID: e5ceba7a8fc799543b3b9a7e7bb89a68
+      internalID: -1558432090
       vertices: []
       indices: 
       edges: []
@@ -416,20 +328,20 @@ TextureImporter:
       name: RefreshButton
       rect:
         serializedVersion: 2
-        x: 596
-        y: 126
+        x: 306
+        y: 1648
         width: 157
         height: 157
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bc9c82bbc2589a458e62d72f8d4eb85
-      internalID: 591698749
+      spriteID: a6c445ac39602a549998901940e854b2
+      internalID: 276625360
       vertices: []
       indices: 
       edges: []
@@ -438,20 +350,108 @@ TextureImporter:
       name: Lock
       rect:
         serializedVersion: 2
-        x: 8
-        y: 8
+        x: 471
+        y: 1674
         width: 58
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e436b40a6928934bbf508baf30f3be7
-      internalID: 1271228881
+      spriteID: 2e88ba7cd6e86e24e8bfcf859e69a032
+      internalID: -2041921656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoosterWatch
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1379
+        width: 292
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012d2292cfb78de4a9f1f95db0fbff24
+      internalID: -1628831643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkmark
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1522
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37300bf33bc84c24b8958d816af192a0
+      internalID: 815104181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoosterEmptyBg
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 1616
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 24, z: 24, w: 24}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a23520b9028a3b40b734d3fa2fc458c
+      internalID: -292394972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoosterBombe
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1211
+        width: 293
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d04ffc2ccc262b4d9da4d9d3af7d89b
+      internalID: -720126055
       vertices: []
       indices: 
       edges: []
@@ -460,7 +460,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a5eabba61914d4a43b14fd907197561c
+    spriteID: 38680b9e76d78584481a11da8c3d8482
     internalID: 0
     vertices: []
     indices: 
@@ -470,20 +470,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BoosterBacklight: -1235371807
-      BoosterBg: 1592129000
-      BoosterBlueBottle: 140711569
-      BoosterBombe: -777500490
-      BoosterEmptyBg: 1939699977
-      BoosterGreenBottle: -815329805
-      BoosterRedBottle: 2131058636
-      BoosterShield: 1670975994
-      BoosterWatch: 706932345
-      Button: -2145160416
-      Checkmark: 1859511285
-      Lock: 1271228881
-      RefreshButton: 591698749
-      Triangle: 1341887988
+      BoosterBacklight: -524084242
+      BoosterBg: 995584036
+      BoosterBlueBottle: -1977868019
+      BoosterBombe: -720126055
+      BoosterEmptyBg: -292394972
+      BoosterGreenBottle: 926343544
+      BoosterRedBottle: -565930567
+      BoosterShield: -1877208876
+      BoosterWatch: -1628831643
+      Button: -610015874
+      Checkmark: 815104181
+      Lock: -2041921656
+      RefreshButton: 276625360
+      Triangle: -1558432090
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

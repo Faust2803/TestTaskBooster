@@ -2,7 +2,6 @@
 using System.Linq;
 using DG.Tweening;
 using UnityEngine;
-using Random = Unity.Mathematics.Random;
 
 namespace UI.Panels
 {
