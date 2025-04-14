@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 7647561845133303925}
   - component: {fileID: 2124208883922911361}
   m_Layer: 5
-  m_Name: SaveAreaPanel
+  m_Name: BoostersSaveArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1023,7 +1023,7 @@ GameObject:
   - component: {fileID: 6440996328693361716}
   - component: {fileID: 2446116575198556197}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: BoostersMainPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

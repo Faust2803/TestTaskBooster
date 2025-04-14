@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 3608410528020239513}
   - component: {fileID: 2361270152126850586}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: SelectBoostersMainPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 3342097919965794749}
   - component: {fileID: 372932930335645895}
   m_Layer: 5
-  m_Name: SaveAreaPanel
+  m_Name: SelectBoostersSaveArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
