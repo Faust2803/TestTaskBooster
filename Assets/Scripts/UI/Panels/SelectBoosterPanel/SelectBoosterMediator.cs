@@ -49,7 +49,6 @@ namespace UI.Panels
         {
             Target.AnimatedBooster.gameObject.SetActive(true);
             Target.BoosterArea.gameObject.SetActive(false);
-            
             Target.AnimatedBooster.transform.position = Target.SelectBoosterItem[_selectedBoosterIndex].transform.position;
             var type =  Target.SelectBoosterItem[_selectedBoosterIndex].Type;
             Target.AnimatedBooster.BoosterImage.sprite = Target.BoosterSprites.Boosters[(int)type];
@@ -66,6 +65,7 @@ namespace UI.Panels
             OnAnimationFinished?.Invoke(Target.SelectBoosterItem[_selectedBoosterIndex].Type);
             Target.AnimatedBooster.transform.localScale = Vector3.one;
             Target.AnimatedBooster.gameObject.SetActive(false);
+            Target.OkButton.gameObject.SetActive(false);
         }
 
         private void OnResetButton()

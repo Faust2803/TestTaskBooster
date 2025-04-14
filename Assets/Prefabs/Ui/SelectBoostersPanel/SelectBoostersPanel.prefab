@@ -30,7 +30,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6142230498107206947}
-  - {fileID: 2935664986569028021}
   - {fileID: 1245653641436068658}
   m_Father: {fileID: 94921611856156888}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -237,7 +236,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2636686606614133975}
-  m_Father: {fileID: 7737738159473332440}
+  m_Father: {fileID: 94921611856156888}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -397,6 +396,7 @@ RectTransform:
   - {fileID: 1978717624871559327}
   - {fileID: 1792111673090447102}
   - {fileID: 7737738159473332440}
+  - {fileID: 2935664986569028021}
   m_Father: {fileID: 2676720164573619077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
