@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace UI.Panels
 {
-    public class SelectBoosterView : BasePanelView
+    public class SelectBoosterPanelView : BasePanelView
     {
         [SerializeField] private GameObject  _boosterArea;
         [SerializeField] private Button  _okButton;
@@ -27,6 +27,7 @@ namespace UI.Panels
         protected override void CreateMediator()
         {
             _mediator = new SelectBoosterMediator();
+            _mediator = new GameCompassPanelMediator();
         }
     }
 }

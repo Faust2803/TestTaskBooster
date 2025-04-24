@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16a355269be57ad4dacca153567693e2
+guid: 9260c02adbb4ed64e9f3b77f6faf5241
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,12 +147,122 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: inGameUiAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 273
+        width: 50
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e89f98e4daf6cf48a0186f17461b8cd
+      internalID: 1482995118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inGameUiAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 422
+        width: 131
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09050c8691d61404c9a6e16c12bf2a1c
+      internalID: -434993100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inGameUiAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 340
+        width: 131
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04213af681d88ae4eafcbbbd667d15e0
+      internalID: -318934600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inGameUiAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 274
+        width: 132
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fee6af35647a24abc675c3f193a01d
+      internalID: 180176521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inGameUiAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 163
+        width: 99
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9a4cde62605ad40bb0ae05f1673eae
+      internalID: -1692670331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 3ab823f3bacdbe04cb35de60811264ec
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +271,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      inGameUiAtlas_0: 1482995118
+      inGameUiAtlas_1: -434993100
+      inGameUiAtlas_2: -318934600
+      inGameUiAtlas_3: 180176521
+      inGameUiAtlas_4: -1692670331
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -308,7 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8882814057173727877}
   - component: {fileID: 3205438678832157324}
-  - component: {fileID: 205344192937623096}
+  - component: {fileID: 9058889089246106936}
   m_Layer: 5
   m_Name: SelectBoostersPanel
   m_TagString: Untagged
@@ -344,7 +344,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5152403459185850724}
   m_CullTransparentMesh: 1
---- !u!114 &205344192937623096
+--- !u!114 &9058889089246106936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5152403459185850724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 518f1002896dad64d850c897ddb671ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bd4abcc35a5466086521c4c9881f0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _animationPanel: {fileID: 3550251193450139130}
@@ -366,9 +366,9 @@ MonoBehaviour:
   _resetButton: {fileID: 5163137498495405137}
   _animationTime: 0.5
   _selectBoosterItem:
-  - {fileID: 961351418397156417}
-  - {fileID: 3694387779122119092}
-  - {fileID: 5728206095184700774}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _animatedBooster: {fileID: 8840263880949978711}
   _boosterSprites: {fileID: 11400000, guid: d6984d2438206744a9a37edd980457ce, type: 2}
 --- !u!1 &5918412159995521459
@@ -1011,17 +1011,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
---- !u!114 &961351418397156417 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1919127316839918236, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
-  m_PrefabInstance: {fileID: 1726413738373582557}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22634697c66a4656956e433ab6d2c9c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &8009468587896939752 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8706070624958917173, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
@@ -1128,17 +1117,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
---- !u!114 &3694387779122119092 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1919127316839918236, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
-  m_PrefabInstance: {fileID: 3019388933900577576}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22634697c66a4656956e433ab6d2c9c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &5851630740122370333 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8706070624958917173, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
@@ -1254,17 +1232,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8706070624958917173, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
   m_PrefabInstance: {fileID: 6187014844077297658}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5728206095184700774 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1919127316839918236, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
-  m_PrefabInstance: {fileID: 6187014844077297658}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22634697c66a4656956e433ab6d2c9c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &6921171748691950795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1276,6 +1243,10 @@ PrefabInstance:
     - target: {fileID: 4506326346154125917, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
       propertyPath: m_Name
       value: AnimatedBooster
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506326346154125917, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8706070624958917173, guid: 0592fab3109258443ab514d599d2a6d3, type: 3}
       propertyPath: m_Pivot.x

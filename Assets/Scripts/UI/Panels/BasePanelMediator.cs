@@ -10,6 +10,10 @@ namespace UI.Panels
         
         private PanelType _panelType;
         
+        private Vector3  _movePanelPosition;
+        private bool _isOpen = true;
+        private RectTransform _movePanelRectTransform;
+        
         public PanelType PanelType => _panelType;
         public bool DeleteAfterClose => PanelView.DeleteAfterClose;
 
@@ -41,6 +45,13 @@ namespace UI.Panels
         
         protected virtual void ShowStart()
         {
+            if (PanelView.MoveButton != null)
+            {
+                PanelView.MoveButton.onClick.AddListener(OnMoveButton);
+                _movePanelPosition = PanelView.MovePanel.transform.position;
+                _movePanelRectTransform = PanelView.MovePanel.GetComponent<RectTransform>();
+            }
+            
             if (PanelView.Panel == null || !PanelView.OpenAnimation)
             {
                 ShowEnd();
@@ -66,6 +77,11 @@ namespace UI.Panels
                 return;
             }
             PanelView.Panel.transform.DOMoveY(MOVE_POSITION, ANIMATION_DURATION).OnComplete(CloseFinish);
+            
+            if (PanelView.MoveButton != null)
+            {
+                PanelView.MoveButton.onClick.RemoveListener(OnMoveButton);
+            }
         }
         
         protected virtual void CloseFinish()
@@ -80,6 +96,61 @@ namespace UI.Panels
         protected virtual void CloseSelf()
         {
             _uiManager.ClosePanel(_panelType);
+        }
+        
+        private void OnMoveButton()
+        {
+            if (_isOpen)
+            {
+                MovePanel(GetMovePosition());
+            }
+            else
+            {
+                if (PanelView.MoveDirection == PanelMoveDirection.Top || PanelView.MoveDirection == PanelMoveDirection.Bottom)
+                {
+                    MovePanel(_movePanelPosition.y);
+                }
+                else
+                {
+                    MovePanel(_movePanelPosition.x);
+                }
+            }
+            _isOpen = !_isOpen;
+        }
+        
+        private void MovePanel(float endPos)
+        {
+            if (PanelView.MoveDirection == PanelMoveDirection.Top || PanelView.MoveDirection == PanelMoveDirection.Bottom)
+            {
+                PanelView.MovePanel.transform.DOMoveY(endPos, PanelView.OpenCloseDuration);
+            }
+            else
+            {
+                PanelView.MovePanel.transform.DOMoveX(endPos, PanelView.OpenCloseDuration);
+            }
+        }
+
+        private float GetMovePosition()
+        {
+            var position = 0F;
+            switch (PanelView.MoveDirection)
+            {
+                case PanelMoveDirection.Top:
+                    position = PanelView.AnimationPanel.transform.position.y + _movePanelRectTransform.rect.height + PanelView.Offset;
+                    break;
+                case PanelMoveDirection.Bottom:
+                    position = PanelView.AnimationPanel.transform.position.y - _movePanelRectTransform.rect.height - PanelView.Offset;
+                    break;
+                case PanelMoveDirection.Left:
+                    position = PanelView.AnimationPanel.transform.position.x - _movePanelRectTransform.rect.width - PanelView.Offset;
+                    break;
+                case PanelMoveDirection.Right:
+                    position = PanelView.AnimationPanel.transform.position.x + _movePanelRectTransform.rect.width + PanelView.Offset;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+            return position;
         }
     }
     

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace UI.Panels
 {
-    public class SelectBoosterMediator :BasePanelMediator <SelectBoosterView, UIData>
+    public class SelectBoosterMediator :BasePanelMediator <SelectBoosterPanelView, UIData>
     {
         private int _selectedBoosterIndex;
         private Vector3 _animatedBoosterPosition;

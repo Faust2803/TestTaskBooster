@@ -3,6 +3,11 @@
     public enum PanelType
     {
         BoostersPanel,
-        SelectBoosterPanel
+        SelectBoosterPanel,
+        GameBottomPanel,
+        GameCompassPanel,
+        GameLeftPanel,
+        GameRightPanel,
+        GameTopPanel
     }
 }
