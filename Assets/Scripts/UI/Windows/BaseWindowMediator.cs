@@ -6,21 +6,12 @@ namespace UI.Windows
 {
     public class BaseWindowMediator: BaseMediator
     {
-        public BaseWindowView WindowView { get; set; }
-        
         private WindowType _windowType;
         
         public WindowType WindowType => _windowType;
-        public bool DeleteAfterClose => WindowView.DeleteAfterClose;
+        public bool DeleteAfterClose => BaseView.DeleteAfterClose;
 
         private bool _closeLock;
-        
-        public virtual void Mediate(BaseWindowView value)
-        {
-            WindowView =  value;
-            if(WindowView.AnimationPanel)
-                _moveto  = WindowView.AnimationPanel.transform.position.y;
-        }
         
         public void SetType(WindowType windowType)
         {
@@ -30,9 +21,9 @@ namespace UI.Windows
         public virtual void Show()
         {
             ShowStart();
-            WindowView.ShowStart();
-            if(WindowView.CloseButton)
-                WindowView.CloseButton.onClick.AddListener(()=>CloseSelf());
+            BaseView.ShowStart();
+            if(BaseView.CloseButton)
+                BaseView.CloseButton.onClick.AddListener(()=>CloseSelf());
 
             _closeLock = false;
         }
@@ -44,51 +35,40 @@ namespace UI.Windows
                 _afterCloseCallback = callback;
             }
             _closeLock = true;
-            if(WindowView.CloseButton)
-                WindowView.CloseButton.onClick.RemoveListener(()=>CloseSelf());
+            if(BaseView.CloseButton)
+                BaseView.CloseButton.onClick.RemoveListener(()=>CloseSelf());
             CloseStart();
         }
 
         protected virtual void ShowStart()
         {
-            if (WindowView.AnimationPanel == null || !WindowView.OpenAnimation)
+            if (BaseView.AnimationPanel == null || !BaseView.OpenAnimation)
             {
-                ShowEnd();
+                OpenFinish();
                 return;
             }
-            
-            // WindowView.WindowPanel.transform.position = new Vector3(WindowView.WindowPanel.transform.position.x,
-            //     MOVE_POSITION,
-            //        WindowView.WindowPanel.transform.position.z);
-            //WindowView.WindowPanel.transform.DOMoveY(_moveto, ANIMATION_DURATION).OnComplete(ShowEnd);
-            WindowView.AnimationPanel.transform.localScale = Vector3.zero;
-            WindowView.AnimationPanel.transform.DOScale(Vector3.one, WindowView.OpenCloseDuration).OnComplete(ShowEnd);
+            OpenAnimation();
         }
-        
-        protected virtual void ShowEnd()
-        {
 
+        protected virtual void OpenAnimation()
+        {
+            BaseView.AnimationPanel.transform.localScale = Vector3.zero;
+            BaseView.AnimationPanel.transform.DOScale(Vector3.one, BaseView.OpenCloseDuration).OnComplete(OpenFinish);
         }
         
         protected virtual void CloseStart()
         { 
-            if (WindowView.AnimationPanel == null || !WindowView.CloseAnimation)
+            if (BaseView.AnimationPanel == null || !BaseView.CloseAnimation)
             {
                 CloseFinish();
                 return;
             }
-            //WindowView.WindowPanel.transform.DOMoveY(MOVE_POSITION, ANIMATION_DURATION).OnComplete(CloseFinish);
-            WindowView.AnimationPanel.transform.DOScale(Vector3.zero, WindowView.OpenCloseDuration).OnComplete(CloseFinish);
+            CloseAnimation();
         }
         
-        protected virtual void CloseFinish()
-        { 
-            WindowView.Close();
-            if (_afterCloseCallback!= null)
-            {
-                _afterCloseCallback.Invoke();
-            }
-            
+        protected virtual void CloseAnimation()
+        {
+            BaseView.AnimationPanel.transform.DOScale(Vector3.zero, BaseView.OpenCloseDuration).OnComplete(CloseFinish);
         }
         
         protected virtual void CloseSelf(Action callback = null)
@@ -96,13 +76,11 @@ namespace UI.Windows
             if(_closeLock) return;
             _uiManager.CloseWindow(callback);
         }
-        
-        
     }
     
-    public abstract class BaseWindowMediator<T, Z> : BaseWindowMediator where T : BaseWindowView where Z : UIData
+    public abstract class BaseWindowMediator<T, Z> : BaseWindowMediator where T : BaseView where Z : UIData
     {
-        public T Target => WindowView as T;
+        public T Target => BaseView as T;
 
         public Z Data => _data as Z;
     }

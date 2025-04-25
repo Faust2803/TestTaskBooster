@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Installers;
+using UI;
 using UI.Panels;
 using UI.Windows;
 using Util;
@@ -10,10 +11,10 @@ namespace Managers
 {
     public class UiManager:IInitializable
     { 
-       private readonly FactoryWindow _factoryWindow;
-       private readonly FactoryPanel _factoryPanels;
-       private readonly WindowsInstaller _windowPool;
-       private readonly PanelsInstaller _panelPool;
+        private readonly FactoryWindow _factoryWindow; 
+        private readonly FactoryPanel _factoryPanels; 
+        private readonly WindowsInstaller _windowPool; 
+        private readonly PanelsInstaller _panelPool;
 
         private BaseWindowMediator _currentWindow;
         private Dictionary<WindowType, BaseWindowMediator> _allWindows;
@@ -21,9 +22,9 @@ namespace Managers
         public BaseWindowMediator CurrentWindow => _currentWindow;
         public BasePanelMediator GetPanelInCreated (PanelType type) => _allPanels.ContainsKey(type) ? _allPanels[type] : null;
         
-        private Queue<WindowType> _windowsQueue = new Queue<WindowType>();
-        private Queue<object> _windowsDataQueue = new Queue<object>();
-        private Stack<BaseWindowMediator> _windowsStack = new Stack<BaseWindowMediator>();
+        private Queue<WindowType> _windowsQueue;
+        private Queue<object> _windowsDataQueue;
+        private Stack<BaseWindowMediator> _windowsStack;
 
         public UiManager(FactoryWindow factoryWindow, FactoryPanel factoryPanels, WindowsInstaller windowPool, PanelsInstaller panelPool)
         {
@@ -31,6 +32,10 @@ namespace Managers
             _factoryPanels = factoryPanels;
             _windowPool = windowPool;
             _panelPool = panelPool;
+
+            _windowsQueue = new Queue<WindowType>();
+            _windowsDataQueue = new Queue<object>();
+            _windowsStack = new Stack<BaseWindowMediator>();
         }
        
         public void Initialize()
@@ -164,9 +169,7 @@ namespace Managers
             var view = LoadWindowPrefab(windowType);
             if (view == null) return null;
         
-            view.Init();
-            BaseWindowMediator mediator;
-            view.OnCreateMediator(out mediator);
+            var mediator = view.Init(this) as BaseWindowMediator;
             mediator.SetType(windowType);
             view.gameObject.SetActive(false);
         
@@ -178,16 +181,14 @@ namespace Managers
             var view = LoadPanelPrefab(panelType);
             if (view == null) return null;
         
-            view.Init();
-            BasePanelMediator mediator;
-            view.OnCreateMediator(out mediator);
+            var mediator = view.Init(this) as BasePanelMediator;
             mediator.SetType(panelType);
             view.gameObject.SetActive(false);
         
             return mediator;
         }
         
-        private BaseWindowView LoadWindowPrefab(WindowType windowType)
+        private BaseView LoadWindowPrefab(WindowType windowType)
         {
             var view = _factoryWindow.Create(windowType);
             view.gameObject.transform.SetParent(_windowPool.transform,false);

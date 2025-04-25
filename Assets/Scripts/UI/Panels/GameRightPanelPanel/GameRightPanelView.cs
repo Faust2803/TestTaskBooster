@@ -5,13 +5,11 @@ namespace UI.Panels
 {
     public class GameRightPanelView : BasePanelView
     {
-        [SerializeField] private Button  _okButton;
-        
-        public Button  OkButton => _okButton;
        
-        protected override void CreateMediator()
+        protected override BaseMediator CreateMediator()
         {
             _mediator = new GameRightPanelPanelMediator();
+            return _mediator;
         }
     }
 }

@@ -5,9 +5,10 @@ namespace UI.Panels
 {
     public class GameTopPanelView : BasePanelView
     {
-        protected override void CreateMediator()
+        protected override BaseMediator CreateMediator()
         {
             _mediator = new GameTopPanelMediator();
+            return _mediator;
         }
     }
 }

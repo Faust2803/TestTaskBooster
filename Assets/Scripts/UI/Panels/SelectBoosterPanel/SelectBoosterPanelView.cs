@@ -24,10 +24,10 @@ namespace UI.Panels
         public SelectBoosterItem  AnimatedBooster => _animatedBooster;
         public BoosterConfig  BoosterSprites => _boosterSprites;
        
-        protected override void CreateMediator()
+        protected override BaseMediator CreateMediator()
         {
             _mediator = new SelectBoosterMediator();
-            _mediator = new GameCompassPanelMediator();
+            return _mediator;
         }
     }
 }

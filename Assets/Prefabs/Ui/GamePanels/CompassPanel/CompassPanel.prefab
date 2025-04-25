@@ -231,6 +231,10 @@ MonoBehaviour:
   _closeAnimation: 0
   _deleteAfterClose: 1
   _openCloseDuration: 0.1
+  _moveButton: {fileID: 0}
+  _movePanel: {fileID: 0}
+  _offset: 0
+  _moveDirection: 0
   _compass: {fileID: 8841210008495236683}
 --- !u!1001 &7469974462654368817
 PrefabInstance:
@@ -302,7 +306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1883942874959711926, guid: 5bbbc0f55f170f3468ea2fd312574d3f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -200
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 1883942874959711926, guid: 5bbbc0f55f170f3468ea2fd312574d3f, type: 3}
       propertyPath: m_AnchoredPosition.y

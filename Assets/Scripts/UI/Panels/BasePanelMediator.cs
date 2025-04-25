@@ -6,22 +6,16 @@ namespace UI.Panels
 {
     public class BasePanelMediator: BaseMediator
     {
-        public BasePanelView PanelView { get; set; }
-        
         private PanelType _panelType;
         
         private Vector3  _movePanelPosition;
         private bool _isOpen = true;
         private RectTransform _movePanelRectTransform;
         
+        private BasePanelView PanelView => BaseView as BasePanelView;
+        
         public PanelType PanelType => _panelType;
-        public bool DeleteAfterClose => PanelView.DeleteAfterClose;
-
-        public virtual void Mediate(BasePanelView value)
-        {
-            PanelView =  value;
-            _moveto  = PanelView.Panel.transform.position.y;
-        }
+        public bool DeleteAfterClose => BaseView.DeleteAfterClose;
         
         public void SetType(PanelType windowType)
         {
@@ -31,7 +25,7 @@ namespace UI.Panels
         public virtual void Show()
         {
             ShowStart();
-            PanelView.ShowStart();
+            BaseView.ShowStart();
         }
         
         public void Close(Action callback = null)
@@ -52,50 +46,37 @@ namespace UI.Panels
                 _movePanelRectTransform = PanelView.MovePanel.GetComponent<RectTransform>();
             }
             
-            if (PanelView.Panel == null || !PanelView.OpenAnimation)
+            if (PanelView.Panel == null || !BaseView.OpenAnimation)
             {
-                ShowEnd();
+                OpenFinish();
                 return;
             }
-            
-            PanelView.Panel.transform.position = new Vector3(PanelView.Panel.transform.position.x,
-                MOVE_POSITION,
-                   PanelView.Panel.transform.position.z);
-            PanelView.Panel.transform.DOMoveY(_moveto, ANIMATION_DURATION).OnComplete(ShowEnd);
+            OpenAnimation();
         }
         
-        protected virtual void ShowEnd()
+        protected virtual void OpenAnimation()
         {
-
+            BaseView.AnimationPanel.transform.localScale = Vector3.zero;
+            BaseView.AnimationPanel.transform.DOScale(Vector3.one, BaseView.OpenCloseDuration).OnComplete(OpenFinish);
         }
         
         protected virtual void CloseStart()
         { 
-            if (PanelView.Panel == null || !PanelView.CloseAnimation)
+            if (PanelView.Panel == null || !BaseView.CloseAnimation)
             {
                 CloseFinish();
                 return;
             }
-            PanelView.Panel.transform.DOMoveY(MOVE_POSITION, ANIMATION_DURATION).OnComplete(CloseFinish);
-            
+            CloseAnimation();
             if (PanelView.MoveButton != null)
             {
                 PanelView.MoveButton.onClick.RemoveListener(OnMoveButton);
             }
         }
         
-        protected virtual void CloseFinish()
-        { 
-            PanelView.Close();
-            if (_afterCloseCallback!= null)
-            {
-                _afterCloseCallback.Invoke();
-            }
-        }
-
-        protected virtual void CloseSelf()
+        protected virtual void CloseAnimation()
         {
-            _uiManager.ClosePanel(_panelType);
+            BaseView.AnimationPanel.transform.DOScale(Vector3.zero, BaseView.OpenCloseDuration).OnComplete(CloseFinish);
         }
         
         private void OnMoveButton()
@@ -156,7 +137,7 @@ namespace UI.Panels
     
     public abstract class BasePanelMediator<T, Z> : BasePanelMediator where T : BasePanelView where Z : UIData
     {
-        public T Target => PanelView as T;
+        public T Target => BaseView as T;
 
         public Z Data => _data as Z;
     }

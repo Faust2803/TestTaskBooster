@@ -2,11 +2,12 @@ using UnityEngine.UI;
 
 namespace UI.Windows
 {
-    public class InfoWindowView : BaseWindowView
+    public class InfoWindowView : BaseView
     {
-        protected override void CreateMediator()
+        protected override BaseMediator CreateMediator()
         {
             _mediator = new InfoWindowMediator();
+            return _mediator;
         }
     }
 }

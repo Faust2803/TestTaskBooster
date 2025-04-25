@@ -31,9 +31,10 @@ namespace UI.Panels
         public GameObject  Chekmark => _chekmark;
         public float  MoveBoosterAnimationTome => _moveBoosterAnimationTome;
         public List<Transform>  Path => _path;
-        protected override void CreateMediator()
+        protected override BaseMediator CreateMediator()
         {
             _mediator = new BoostersPanelMediator();
+            return _mediator;
         }
 
         
