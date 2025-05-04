@@ -7,9 +7,7 @@ namespace UI
 {
     public abstract class BaseView : MonoBehaviour
     {
-        [FormerlySerializedAs("_windowPanel")]
         [Header("Animation Panel")]
-        
         [SerializeField] protected GameObject _animationPanel;
         [SerializeField] protected bool _openAnimation;
         [SerializeField] protected bool _closeAnimation;

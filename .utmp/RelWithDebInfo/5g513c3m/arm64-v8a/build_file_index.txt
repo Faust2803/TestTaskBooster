@@ -1,0 +1,2 @@
+C:\Prodject\TestBooster\TestTaskBooster\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Prodject\TestBooster\TestTaskBooster\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

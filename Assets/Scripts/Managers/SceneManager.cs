@@ -26,12 +26,15 @@ namespace Managers
                 new BoosterItemData()
             };
             
-            _selectBoosterPanel =_uiManager.OpenPanel(PanelType.SelectBoosterPanel) as SelectBoosterMediator;
-            _boostersPanel =_uiManager.OpenPanel(PanelType.BoostersPanel, 
+            
+            _uiManager.OpenPanel(PanelType.BoostersPanel, 
                 new BoostersData {
                     BoosterItems = boosterItems
                 }
-            ) as BoostersPanelMediator;
+            ) ;
+            
+           _uiManager.OpenPanel(PanelType.SelectBoosterPanel);
+           
             if (_selectBoosterPanel != null)
             {
                 _selectBoosterPanel.OnAnimationFinished += OnSelectAnimationFinished;

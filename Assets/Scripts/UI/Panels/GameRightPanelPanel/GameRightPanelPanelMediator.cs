@@ -13,7 +13,7 @@ namespace UI.Panels
             Target.LeftTernButton.onClick.AddListener(()=> OnChangeTern.Invoke(TernType.Left));
             Target.RightTernButton.onClick.AddListener(()=> OnChangeTern.Invoke(TernType.Right));
             Target.NoTernButton.onClick.AddListener(()=> OnChangeTern.Invoke(TernType.None));
-            Target.FireButton.onClick.AddListener(()=> OnFire.Invoke(FireTernType.Left));
+            Target.FireButton.onClick.AddListener(()=> OnFire.Invoke(FireTernType.Right));
         }
         
         protected override void CloseStart()

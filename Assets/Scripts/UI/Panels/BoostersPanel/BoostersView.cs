@@ -21,6 +21,12 @@ namespace UI.Panels
         [SerializeField] private GameObject  _chekmark;
         [SerializeField] private float  _moveBoosterAnimationTome = 3F;
         [SerializeField] private List<Transform>  _path;
+        
+        protected override BaseMediator CreateMediator()
+        {
+            _mediator = new BoostersPanelMediator();
+            return _mediator;
+        }
         public GameObject  SlidingPanel => _slidingPanel;
         public Button  SlidingButton => _slidingButton;
         public GameObject  Lock => _lock;
@@ -31,11 +37,7 @@ namespace UI.Panels
         public GameObject  Chekmark => _chekmark;
         public float  MoveBoosterAnimationTome => _moveBoosterAnimationTome;
         public List<Transform>  Path => _path;
-        protected override BaseMediator CreateMediator()
-        {
-            _mediator = new BoostersPanelMediator();
-            return _mediator;
-        }
+        
 
         
 

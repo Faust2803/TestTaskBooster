@@ -8,6 +8,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 344078428459000880, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177308114533796601, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230104761494331678, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361119112840132710, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2544242385650733652, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286509552695351237, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4938143371706200525, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 5279308904198526125, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
       propertyPath: m_Name
       value: Colonial Ship
@@ -52,8 +80,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5399804421985509573, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301772428215391924, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226186172073148260, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296746328434064531, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601283176583166273, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
+      propertyPath: _distance
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5279191628783135541, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a68317fec01a7b241970d40d0d1e07c8, type: 3}

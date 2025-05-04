@@ -20,7 +20,6 @@ namespace Managers
         private Dictionary<WindowType, BaseWindowMediator> _allWindows;
         private Dictionary<PanelType, BasePanelMediator> _allPanels;
         public BaseWindowMediator CurrentWindow => _currentWindow;
-        public BasePanelMediator GetPanelInCreated (PanelType type) => _allPanels.ContainsKey(type) ? _allPanels[type] : null;
         
         private Queue<WindowType> _windowsQueue;
         private Queue<object> _windowsDataQueue;
@@ -48,7 +47,7 @@ namespace Managers
         {
             if (_currentWindow == null)
             {
-               CreateWindow(windowType, data);
+               ShowWindow(windowType, data);
             }
             else
             {
@@ -70,10 +69,10 @@ namespace Managers
                 }
                 _windowsStack.Push(_currentWindow);
             }
-            CreateWindow(windowType, data);
+            ShowWindow(windowType, data);
         }
 
-        private void CreateWindow(WindowType windowType, object data = null)
+        private void ShowWindow(WindowType windowType, object data = null)
         {
             if (_allWindows.ContainsKey(windowType))
             {
@@ -81,7 +80,7 @@ namespace Managers
             }
             else
             {
-                _currentWindow = GetWindow(windowType);
+                _currentWindow = CreateWindow(windowType);
                 if (_currentWindow == null) return;
                 _allWindows.Add(windowType, _currentWindow);
             }
@@ -107,7 +106,7 @@ namespace Managers
             }
             else
             {
-                panel = GetPanel(panelType);
+                panel = CreatePanel(panelType);
                 if (panel == null) return null;
                 _allPanels.Add(panelType, panel);
             }
@@ -164,7 +163,7 @@ namespace Managers
             }
         }
 
-        private BaseWindowMediator GetWindow(WindowType windowType)
+        private BaseWindowMediator CreateWindow(WindowType windowType)
         {
             var view = LoadWindowPrefab(windowType);
             if (view == null) return null;
@@ -176,7 +175,7 @@ namespace Managers
             return mediator;
         }
         
-        private BasePanelMediator GetPanel(PanelType panelType)
+        private BasePanelMediator CreatePanel(PanelType panelType)
         {
             var view = LoadPanelPrefab(panelType);
             if (view == null) return null;
